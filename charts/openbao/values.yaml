@@ -1051,7 +1051,7 @@ server:
     # pod:
     #   runAsNonRoot: true
     #   runAsGroup: {{ .Values.server.gid | default 1000 }}
-    #   runAsUser: {{ .Values.server.uid | default 100 }}
+       runAsUser: {{ .Values.server.uid | default 1000670000 }}
     #   fsGroup: {{ .Values.server.gid | default 1000 }}
     # container:
     #   allowPrivilegeEscalation: false
